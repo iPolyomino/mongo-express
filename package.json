@@ -1,0 +1,21 @@
+{
+  "name": "mongo-express",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "ssh://git@github.com/iPolyomino/mongo-express.git",
+  "author": "iPolyomino <macbookpromacbookpromacbookpro@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "babel-node ./app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0"
+  }
+}
