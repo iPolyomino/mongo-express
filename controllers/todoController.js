@@ -1,4 +1,11 @@
-export const readAllTodo = (req, res) => {
-  const name = req.query.name || "world";
-  res.send(`hello ${name} !`);
+import TodoModel from "../models/todoModel";
+
+export const readAllTodo = async (req, res) => {
+  TodoModel.find().then((todo) => {
+    res.json(todo);
+  });
+};
+
+export const createTodo = (req, res) => {
+  res.send(`create`);
 };
