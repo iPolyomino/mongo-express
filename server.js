@@ -5,11 +5,13 @@ import todoRouter from "./routers/todoRouter";
 import routes from "./routes";
 
 const app = express();
-const port = process.env.PORT || 3000;
+
+const HOST = "0.0.0.0";
+const PORT = process.env.PORT || 3000;
 
 app.use(routes.home, homeRouter);
 app.use(routes.todo, todoRouter);
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+app.listen(PORT, HOST);
+
+console.log(`Running on http://${HOST}:${PORT}`);

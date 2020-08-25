@@ -1,13 +1,13 @@
 {
   "name": "mongo-express",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "server.js",
   "repository": "ssh://git@github.com/iPolyomino/mongo-express.git",
   "author": "iPolyomino <macbookpromacbookpromacbookpro@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "babel-node ./app.js"
+    "start": "babel-node server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
